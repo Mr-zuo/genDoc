@@ -125,7 +125,7 @@ public class GenDoc {
             inPackage = true;
         }
 
-        if(inPackage && cls.getAnnotationByName("Controller") != null || cls.getAnnotationByName("RestController") != null){
+        if(inPackage && cls.getAnnotationByName("Controller") != null || cls.getAnnotationByName("RestController") != null || cls.getAnnotationByName("DocApi") != null){
             if(!cls.ignore()){
                 return SpringConvertHelper.convertToSpringMvcClass(cls);
             }

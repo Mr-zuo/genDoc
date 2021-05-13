@@ -25,7 +25,8 @@ public class SpringConvertHelper {
                 annotation.getName().equals("GetMapping") ||
                 annotation.getName().equals("DeleteMapping") ||
                 annotation.getName().equals("PutMapping") ||
-                annotation.getName().equals("PostMapping")){
+                annotation.getName().equals("PostMapping") ||
+                annotation.getName().equals("DocMethod")){
                     return true;
                 }
             }

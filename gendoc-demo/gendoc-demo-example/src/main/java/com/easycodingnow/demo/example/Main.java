@@ -33,8 +33,8 @@ public class Main {
 
         GenConfig genConfig = new GenConfig();
         genConfig.setApiScanCommentTag(Lists.newArrayList("apiNote"));
-        genConfig.setSourcePath("/Users/lihao/Desktop/java/genDoc/gendoc-demo/gendoc-demo-web1");
-        genConfig.setOutputPath("/Users/lihao/Desktop/java/genDoc/gendoc-demo/gendoc-demo-web1");
+        genConfig.setSourcePath("gendoc-demo/gendoc-demo-web1");
+        genConfig.setOutputPath("gendoc-demo/gendoc-demo-web1");
         genConfig.setWebType(GenConfig.WebType.SPRING_MVC);
         genConfig.setOutPutType(GenConfig.OutPutType.RPC_HTML);
         GenDoc.gen(genConfig);

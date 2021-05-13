@@ -24,7 +24,6 @@ public class ShopController {
      * @param shopNum  商店数量
      * @return 商品实体
      */
-    @RequestMapping("getShop")
     public Result<Shop> getShopsV2(String shopName, int shopNum){
         return null;
     }
