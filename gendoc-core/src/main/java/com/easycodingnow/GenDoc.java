@@ -102,7 +102,7 @@ public class GenDoc {
                 }
             });
         }
-        logger.info("【genDoc】 一共解析出" + docClassList.size() + "api文件，耗时:" + stopwatch.elapsed(TimeUnit.MILLISECONDS) + "毫秒");
+        logger.info("【genDoc】 一共解析出" + docClassList.size() + "个api文件，耗时:" + stopwatch.elapsed(TimeUnit.MILLISECONDS) + "毫秒");
 
         if(GenConfig.OutPutType.HTML.equals(genConfig.getOutPutType()) ||
                 GenConfig.OutPutType.RPC_HTML.equals(genConfig.getOutPutType())){
